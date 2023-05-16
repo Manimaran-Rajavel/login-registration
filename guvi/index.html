@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn Page</title>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+    <div id="login">
+        
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form" action="" method="post">
+                            <h3 class="text-center text-info">LogIn</h3>
+                            <div class="form-group">
+                                <label for="username" class="text-info">Email:</label><br>
+                                <input id="email" type="text" name="username" id="username" class="form-control" autocomplete="off">
+                                <div style="color: red;" id="error1"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="text-info">Password:</label><br>
+                                <input id="password" type="password" name="password" id="password" class="form-control">
+                                <div style="color: red;" id="error2"></div>
+                            </div>
+                            <div class="mt-5">
+                                <div class="form-group">
+                                    <button id="logIn" type="submit" class="btn btn-info btn-md">Submit</button>
+                                </div>
+                                <div id="register-link" class="text-right">
+                                    <p>Not a Member? <a href="./pages/registration.html" class="text-info">Register here</a></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/login.js"></script>
+   
+</body>
+
+</html>
